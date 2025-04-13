@@ -17,6 +17,25 @@ A API foi construída com **FastAPI**, utilizando **SQLite** para persistência 
 
 ---
 
+### 📦 Estrutura de Diretórios
+
+```
+backend/ 
+    ├── app/ 
+_______├── router/ 
+_____________├── __init__.py
+_____________├── orders.py
+_____________├── products.py
+_______├── __init__.py 
+_______├── database.py
+_______├── main.py
+_______├── models.py
+_______├── schemas.py
+____├── Dockerfile
+____├── requirements.txt
+____└── README.md
+```
+
 ## ⚙️ Rodando o Backend Localmente
 
 Siga os passos abaixo para executar o projeto no seu ambiente local.
