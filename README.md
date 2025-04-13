@@ -23,9 +23,10 @@ Siga os passos abaixo para executar o projeto no seu ambiente local.
 
 ### 📥 1. Clone o Repositório
 
+Crie uma pasta e clone o projeto abaixo:
+
 ```bash
-git clone https://github.com/victorazevedo0/mvp-sprint-3---Loja-virtual.git
-cd mvp-sprint-3---Loja-virtual/backend
+git clone https://github.com/victorazevedo0/MVP_Sprint-3_back-end.git
 ```
 
 ## 🐍 2. Crie e Ative um Ambiente Virtual
@@ -55,9 +56,9 @@ Siga os passos abaixo para executar o projeto no seu ambiente local.
 
 ### 📥 1. Clone o Repositório
 
+Crie uma pasta de clone o projeto abaixo:
 ```bash
-git clone https://github.com/victorazevedo0/mvp-sprint-3---Loja-virtual.git
-cd mvp-sprint-3---Loja-virtual/backend
+git clone https://github.com/victorazevedo0/MVP_Sprint-3_back-end.git
 ```
 
 ## 🐳 2. Rodando com Docker
@@ -72,18 +73,11 @@ Instale o Docker de acordo com seu sistema operacional:
 
     ⚠️ Usuários Windows: certifique-se de que a virtualização está habilitada na BIOS e que o WSL2 está corretamente instalado e configurado.
 
-## 🧱 3. Construa a Imagem
+## 🧱 🚀 3. Construa a Imagem e Rode o container
 
 ```bash
-docker build -t meu-backend .
+docker-compose up --build
 ```
-
-## 🚀 4. Rode o Container
-
-```bash
-docker run -d -p 8000:8000 --name container-backend meu-backend
-```
-
 A API estará disponível em: http://localhost:8000
 📌 Endpoints da API
 
@@ -96,24 +90,4 @@ PUT	/api/v1/orders/{id}	Atualiza um pedido existente
 DELETE	/api/v1/orders/{id}	Remove um pedido
 
     Acesse a documentação interativa em: http://localhost:8000/docs
-
-Segue documentação da API externa, no qual está sendo utilizada para carregar os produtos da API no projeto através de um GET.
-
-[Fake Store](https://fakestoreapi.com/docs#tag/Products)
-
-Obs: O projeto está com propensão de crescer, com cadastro de produtos, clientes e melhoria na estrutura de pedidos.
-
-🧭 Diagrama da Arquitetura
-
-A arquitetura segue o padrão MVC e comunicação via REST:
-
-        Frontend (Html 5, Css3 Bootstrap e JS)
-               │
-               ▼
-        FastAPI (Backend)
-               │
-               ▼
-          SQLite (Banco de Dados)
-
-
 **Desenvolvido por Victor Azevedo 💻**
